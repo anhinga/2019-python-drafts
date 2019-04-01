@@ -23,7 +23,7 @@ The main differences from the original:
 >
 ```
 
-2) we measure 'frames per second": 
+2) we measure 'frames per second" (this way you can see what is the cost of changing data outside shaders by pressing and holding either 'a' or 'b' and seeing how it affects the frame rate): 
 
 ```
 297a310

@@ -78,7 +78,7 @@ app.layout = html.Div([
 
 @app.callback(Output('cytoscape-selectedNodeData-markdown', 'children'),
               [Input('cytoscape-event-callbacks', 'selectedNodeData'),
-			   Input('cytoscape-event-callbacks', 'selectedEdgeData')])
+               Input('cytoscape-event-callbacks', 'selectedEdgeData')])
 def displaySelectedNodeData(node_data_list, edge_data_list):
 
     if node_data_list:

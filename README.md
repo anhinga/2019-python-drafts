@@ -2,6 +2,7 @@
 
 ## subdirectories of this repository with examples
 
+ * dash-cytoscape
  * pyglet
  * vispy
 

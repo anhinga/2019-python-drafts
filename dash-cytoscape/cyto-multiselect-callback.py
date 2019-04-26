@@ -1,4 +1,5 @@
-# a slightly cleaned up and extended the last example from Dash Cytoscape docs 
+# a slightly cleaned up and extended version of 
+# the last example from Dash Cytoscape docs 
 # Documentation chapter https://dash.plot.ly/cytoscape/events
 
 # Changes:
@@ -20,9 +21,9 @@ app = dash.Dash(__name__)
 nodes = [
     {
         'data': {'id': short, 'label': label},
-        'position': {'x': 20*long, 'y': -20*lat}
+        'position': {'x': 20*lon, 'y': -20*lat}
     }
-    for short, label, lat, long in (
+    for short, label, lat, lon in (
         ('la', 'Los Angeles', 34.03, -118.25),
         ('nyc', 'New York', 40.71, -74),
         ('to', 'Toronto', 43.65, -79.38),

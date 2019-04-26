@@ -1,10 +1,11 @@
-# a slightly cleaned up the last example from Dash Cytoscape docs 
+# a slightly cleaned up and extended the last example from Dash Cytoscape docs 
 # Documentation chapter https://dash.plot.ly/cytoscape/events
 
 # Changes:
 #   boxSelectionEnabled=True (added)
 #   lat/long semantics (fixed)
 #   markdown output formatting (fixed)
+#   output list of selected edges (added)
 
 #import json
 
@@ -75,13 +76,23 @@ app.layout = html.Div([
 
 
 @app.callback(Output('cytoscape-selectedNodeData-markdown', 'children'),
-              [Input('cytoscape-event-callbacks', 'selectedNodeData')])
-def displaySelectedNodeData(data_list):
-    if not data_list:
-        return
+              [Input('cytoscape-event-callbacks', 'selectedNodeData'),
+			   Input('cytoscape-event-callbacks', 'selectedEdgeData')])
+def displaySelectedNodeData(node_data_list, edge_data_list):
 
-    cities_list = [data['label'] for data in data_list]
-    return "You selected the following cities:\n* " + "\n* ".join(cities_list)
+    if node_data_list:
+        cities_list = [data['label'] for data in node_data_list]
+        cities_string = "\nYou selected the following cities:\n* " + "\n* ".join(cities_list)
+    else:
+        cities_string = ""
+	
+    if edge_data_list:
+        routes_list = [data['source']+"->"+data['target'] for data in edge_data_list]
+        routes_string = "\n\nYou selected the following routes:\n* " + "\n* ".join(routes_list)
+    else:
+        routes_string = ""	
+	
+    return cities_string + routes_string
 
 
 if __name__ == '__main__':

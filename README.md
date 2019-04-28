@@ -4,6 +4,7 @@
 
  * dash-cytoscape
  * pyglet
+ * trio-websocket
  * vispy
 
 ## online books and manuals

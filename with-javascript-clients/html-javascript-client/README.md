@@ -1,4 +1,4 @@
-# Snippets from a Javascript Websocket client tutorial and their light modifications:
+## Snippets from a Javascript Websocket client tutorial (and light modifications of those snippets):
 
 https://www.pegaxchange.com/2018/03/23/websocket-client/
 

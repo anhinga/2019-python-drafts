@@ -6,6 +6,7 @@
  * pyglet
  * trio-websocket
  * vispy
+ * with-javascript-clients (mix of JavaScript, Python, and websockets)
 
 ## online books and manuals
 

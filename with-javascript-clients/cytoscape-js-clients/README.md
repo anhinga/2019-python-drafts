@@ -15,7 +15,7 @@ But I don't have much experience with JavaScript (from looking at _JavaScript: T
 
 Also the Cytoscape.js data structures are rather complicated. E.g. I tried to study `event` object I am getting in `version4.js` here: `cy.on('tap', 'node', function(event) { ...`
 
-It turns out that it has cycles, and moreover it is so complicated that `JSON.stringify(JSON.decycle(event))` from https://github.com/douglascrockford/JSON-js/blob/master/cycle.js takes forever (it's not clear, if it would terminate at all).
+It turns out that it has cycles, so one can't just use `JSON.stringify(event)` out of the box, and moreover it is so complicated that `JSON.stringify(JSON.decycle(event))` from https://github.com/douglascrockford/JSON-js/blob/master/cycle.js takes forever (it's not clear, if it would terminate at all).
 
 The more straightforward `Cereal.stringify(event)` from https://github.com/atomizejs/cereal/blob/master/lib/cereal.js works instantly (kudos!), but the length of the resulting string representation of this object is about 200 thousand characters for this example. So it is a complicated nested object, and the idea to send it all to the Python side and process there is not necessarily all that attractive (one should really extract what matters and form a more compact object on the JavaScript side before sending it to a Python server).
 

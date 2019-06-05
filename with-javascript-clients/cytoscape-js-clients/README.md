@@ -26,7 +26,7 @@ It might be that one can't just do that based on looking at documentation (http:
 Returning to Dash Cytoscape and the connections of that Python software with JavaScript we observe that
 
  * Dash components are largely based on React: https://dash.plot.ly/react-for-python-developers
- * The author of Cytoscape.js did produce a React component for Plot.ly: https://github.com/plotly/react-cytoscapejs
- * However, Dash Cytoscape seems to use a completely different React component: https://github.com/plotly/dash-cytoscape/blob/master/src/lib/components/Cytoscape.react.js
+ * The author of Cytoscape.js wrote a React component for Plot.ly: https://github.com/plotly/react-cytoscapejs
+ * Dash Cytoscape itself uses a higher-level React component, which imports the one above: https://github.com/plotly/dash-cytoscape/blob/master/src/lib/components/Cytoscape.react.js
  
 It seems that the last component is what needs to be changed, if one wants to expand event handling capabilities in Dash Cytoscape to satisfy our needs here: https://github.com/plotly/dash-cytoscape/issues/57

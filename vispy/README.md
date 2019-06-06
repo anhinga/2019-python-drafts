@@ -29,3 +29,9 @@ The main differences from the original:
 297a310
 >     c.measure_fps()
 ```
+
+***
+
+Among the key features of VisPy is that one can include _vertex shaders_ and _fragment shaders_ (also known as _pixel shaders_)  written in GLSL (OpenGL Shading Language) and represented as strings into Python code. 
+
+[The Book of Shaders](https://thebookofshaders.com/) is a nice tutorial book on fragment shaders.

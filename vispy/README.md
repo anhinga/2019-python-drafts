@@ -28,7 +28,7 @@ The main differences from the original:
 ```
 297a310
 >     c.measure_fps()
-```
+```https://thebookofshaders.com/13/) references the website of Íñigo Quílez, and, in particular, his a
 
 ***
 
@@ -37,3 +37,9 @@ Among the key features of VisPy is that one can include _vertex shaders_ and _fr
 In the `vispy_example.py` in this directory, the vertex shader program is at lines 16-50 and the fragment shader program is at lines 54-210, so this is an example of a really shader-heavy code (35+155=190 lines are in shaders, that's out of the 311 lines of the overall length of `vispy_example.py`).
 
 [The Book of Shaders](https://thebookofshaders.com/) is a nice tutorial book on fragment shaders.
+
+***
+
+And, more specifically, [the chapter on Fractal Brownian Motion](https://thebookofshaders.com/13/) references the website of Íñigo Quílez, and, in particular, his articles on [advanced value noise](http://www.iquilezles.org/www/articles/morenoise/morenoise.htm) and [domain warping](http://www.iquilezles.org/www/articles/warp/warp.htm).
+
+The first of these articles provides information on how his famous [Elevated](http://www.iquilezles.org/prods/index.htm#elevated) 4 kb intro is made. I wanted to understand that one since I first seen it a few years ago.

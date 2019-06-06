@@ -15,10 +15,10 @@ The main differences from the original:
 >
 263a267,273
 >         if event.text == 'a':
->             self.data['a_position'] = 0.99*self.data['a_position']  #0.15 * np.random.randn(                                                                                 self.n, 3)
+>             self.data['a_position'] = 0.99*self.data['a_position']  #0.15 * np.random.randn(self.n, 3)                                                                              
 >             self.program.bind(gloo.VertexBuffer(self.data))
 >         if event.text == 'b':
->             self.data['a_position'] = 1.01*self.data['a_position']  #0.15 * np.random.randn(                                                                                 self.n, 3)
+>             self.data['a_position'] = 1.01*self.data['a_position']  #0.15 * np.random.randn(self.n, 3)                                                                                 
 >             self.program.bind(gloo.VertexBuffer(self.data))
 >
 ```

@@ -34,6 +34,6 @@ The main differences from the original:
 
 Among the key features of VisPy is that one can include _vertex shaders_ and _fragment shaders_ (also known as _pixel shaders_)  written in GLSL (OpenGL Shading Language) and represented as strings into Python code. 
 
-In the `vispy_example.py` in this directory, the vertex shader program is at lines 16-50 and the fragment shader program is at lines 54-210, so this is an example of a really shader-heavy code (35+155=190 lines are in shaders out of the 311 lines of code overall).
+In the `vispy_example.py` in this directory, the vertex shader program is at lines 16-50 and the fragment shader program is at lines 54-210, so this is an example of a really shader-heavy code (35+155=190 lines are in shaders, that's out of the 311 lines of the overall length of `vispy_example.py`).
 
 [The Book of Shaders](https://thebookofshaders.com/) is a nice tutorial book on fragment shaders.

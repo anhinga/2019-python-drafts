@@ -28,7 +28,7 @@ The main differences from the original:
 ```
 297a310
 >     c.measure_fps()
-```https://thebookofshaders.com/13/) references the website of Íñigo Quílez, and, in particular, his a
+```
 
 ***
 

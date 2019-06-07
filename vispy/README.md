@@ -44,4 +44,4 @@ And, more specifically, [the chapter on Fractal Brownian Motion](https://thebook
 
 The first of these articles provides information on how his famous [Elevated](http://www.iquilezles.org/prods/index.htm#elevated) 4 kb intro is made. I wanted to understand that one since I first seen it a few years ago.
 
-To link this back to `vispy` examples, the Shadertoy program https://www.shadertoy.com/view/MdX3Rr is implemented by https://github.com/vispy/vispy/blob/master/examples/demo/gloo/shadertoy.py (have `vispy` installed and just run `python shadertoy.py` to reproduce this Shadertoy animation).
+To link this back to VisPy examples, the Shadertoy program https://www.shadertoy.com/view/MdX3Rr is implemented by https://github.com/vispy/vispy/blob/master/examples/demo/gloo/shadertoy.py (if you have VisPy installed, just run `python shadertoy.py` to reproduce this Shadertoy animation).

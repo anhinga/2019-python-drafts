@@ -12,20 +12,18 @@ It is possible to edit the code on the book site and observe the changes. One ca
 
 Then, if one replaces `vec2(12.9898,78.233)` with a mouse position, one can create an interactive animation. It turns out that images tend to be more interesting when the mouse coordinates are low, so we rescale the mouse vector multiplying it by `0.1`.
 
-Then we add time to the argument of `fract`, and this way the shader becomes animated. We thought it is better to slow the animation down somewhat by multiplying time by 0.5.
-
-Finally, we add the alternatives, `vec2(sin(4.*uv.x), sin(10.*uv.y))` and `vec2(sin(4.*uv.x), uv.y)`. One can use them instead of `uv.xy` in the dot product for more interesting patterns, resulting in this code fragment:
+Then we add time to the argument of `fract`, and this way the shader becomes animated. We thought it is better to slow the animation down somewhat by multiplying time by 0.5, resulting in this code fragment:
 
 ```c
 float fract_sin_dot (vec2 uv) {
     return fract(sin(dot(
                          uv.xy,
-                         // vec2(sin(4.*uv.x), sin(10.*uv.y)),
-                         // vec2(sin(4.*uv.x), uv.y),
                          0.1*iMouse.xy))*
         4. + 0.5*iTime);
 }
 ```
+
+Finally, we add the alternatives, `vec2(sin(4.*uv.x), sin(10.*uv.y))` and `vec2(sin(4.*uv.x), uv.y)`. One can use them instead of `uv.xy` in the dot product for more interesting patterns.
 
 ***
 

@@ -39,7 +39,7 @@ Finally, I added the alternatives, `vec2(sin(4.*uv.x), sin(10.*uv.y))` and `vec2
 
 ***
 
-At this stage, I ported this shader into VisPy (I describe this port next). The VisPy-based Python code was used in the interactive presentation during @party compoes.
+At this stage, I ported this shader into VisPy (I describe this port next). The VisPy-based Python code was used in the interactive presentation during @party compos.
 
 I have now made the Shadertoy version available on the Shadertoy site: https://www.shadertoy.com/view/WlSGzK
 

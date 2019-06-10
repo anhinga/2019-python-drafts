@@ -71,6 +71,8 @@ by pressing numeric keys `1`, `2`, `3`. To accomplish that I had to change the s
             self.program['iControl1'] = 1   
 ```
 
+I have also added some control by letters with a somewhat different logic, but that was probably a mistake.
+
 If one were to add keyboard control on the Shadertoy site, the code doing that would be quite different (they have a dedicated "texture keyboard" for this).
 
 Another difference is that mouse click event does not work in VisPy right now, one has to drag the mouse to communicate with the program:
@@ -84,4 +86,8 @@ Another difference is that mouse click event does not work in VisPy right now, o
 
 On the positive side, it is much easier to generate negative values for the mouse pointer in VisPy by dragging the mouse below or to the left of the image (the coordinate origin is at the lower left corner in this program), and those negative values produce interesting effects.
 
-**IN PROGRESS...**
+***
+
+Performance recording: https://scenesat.com/videoarchive/118 preparations starting at 11:38:07 and the demo at 11:40:55  (11 hours 40 min 55 sec, in case the URL changes, that is "2019-06-09 @-party 2019 - Day 2 (12h55m4s hours)").
+
+(I did forget to bring the mouse which I had with me to the scene, so the control is somewhat less fluent than what I can achieve with a mouse. The compos started at 2:15am (rather than planned time of 10:30pm), and were running till about 4am.)

@@ -10,7 +10,7 @@ float random (vec2 st) {
 
 It is possible to edit the code on the book site and observe the changes. One can note that when one gradually replaces `43758.5453123` by `4375.`, `437.`, `43.`, and `4.`, the image acquires more and more non-random structure.
 
-Then, if one replaces `vec2(12.9898,78.233)` with a mouse position, one can create an interactive animation. 
+Then, if one replaces `vec2(12.9898,78.233)` with the current mouse position, one can create an interactive animation. 
 
 ```c
 float fract_sin_dot (vec2 uv) {

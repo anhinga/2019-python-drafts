@@ -10,7 +10,7 @@ float random (vec2 st) {
 
 It is possible to edit the code on the book site and observe the changes. One can note that when one gradually replaces `43758.5453123` by `4375.`, `437.`, `43.`, and `4.`, the image acquires more and more non-random structure.
 
-Then, if one replaces `vec2(12.9898,78.233)` with the current mouse position, one can create an interactive animation. 
+Then, if one replaces `vec2(12.9898,78.233)` with the current mouse position, one obtains an interactive animation controlled by mouse. 
 
 ```c
 float fract_sin_dot (vec2 uv) {
@@ -34,6 +34,14 @@ float fract_sin_dot (vec2 uv) {
 ```
 
 Finally, we add the alternatives, `vec2(sin(4.*uv.x), sin(10.*uv.y))` and `vec2(sin(4.*uv.x), uv.y)`. One can use them instead of `uv.xy` in the dot product for more interesting patterns.
+
+***
+
+At this stage, we transferred this into VisPy (which we describe next). The VisPy-based Python code was used in the interactive presentation during @party compoes.
+
+We have now made the Shadertoy version available on the Shadertoy site: https://www.shadertoy.com/view/WlSGzK
+
+(The difference is, the `vec2(sin(4.*uv.x), sin(10.*uv.y))` is now the starting version, and we added 1 pixel to the mouse position, `0.1*iMouse.xy+vec2(1.0,1.0)`, so that the initial state is not blank.)
 
 ***
 

@@ -10,7 +10,22 @@ float random (vec2 st) {
 
 It is possible to edit the code on the book site and observe the changes. One can note that when one gradually replaces `43758.5453123` by `4375.`, `437.`, `43.`, and `4.`, the image acquires more and more non-random structure.
 
-Then, if one replaces `vec2(12.9898,78.233)` with a mouse position, one can create an interactive animation.
+Then, if one replaces `vec2(12.9898,78.233)` with a mouse position, one can create an interactive animation. It turns out that images tend to be more interesting when the mouse coordinates are low, so we rescale the mouse vector multiplying it by `0.1`.
+
+Then we add time to the argument of `fract`, and this way the shader becomes animated. We thought it is better to slow the animation down somewhat by multiplying time by 0.5.
+
+Finally, we add the alternatives, `vec2(sin(4.*uv.x), sin(10.*uv.y))` and `vec2(sin(4.*uv.x), uv.y)`. One can use them instead of `uv.xy` in the dot product for more interesting patterns, resulting in this code fragment:
+
+```c
+float fract_sin_dot (vec2 uv) {
+    return fract(sin(dot(
+                         uv.xy,
+                         // vec2(sin(4.*uv.x), sin(10.*uv.y)),
+                         // vec2(sin(4.*uv.x), uv.y),
+                         0.1*iMouse.xy))*
+        4. + 0.5*iTime);
+}
+```
 
 ***
 

@@ -12,7 +12,7 @@ float random (vec2 st) {
 
 It is possible to edit the code on the book site and observe the changes. One can note that when one gradually replaces `43758.5453123` by `4375.`, `437.`, `43.`, and `4.`, the image acquires more and more non-random structure.
 
-Then, if one replaces `vec2(12.9898,78.233)` with the current mouse position, one obtains an interactive animation controlled by mouse. 
+Then, if one replaces `vec2(12.9898,78.233)` with the current mouse position, one obtains an interactive shader controlled by mouse. 
 
 ```c
 float fract_sin_dot (vec2 uv) {
@@ -71,5 +71,17 @@ by pressing numeric keys `1`, `2`, `3`. To accomplish that I had to change the s
             self.program['iControl1'] = 1   
 ```
 
+If one were to add keyboard control on the Shadertoy site, the code doing that would be quite different (they have a dedicated "texture keyboard" for this).
+
+Another difference is that mouse click event does not work in VisPy right now, one has to drag the mouse to communicate with the program:
+
+```python
+    def on_mouse_click(self, event):
+        # BUG: DOES NOT WORK YET, NO CLICK EVENT IN VISPY FOR NOW...
+        imouse = event.pos + event.pos
+        self.program['iMouse'] = imouse
+```
+
+On the positive side, it is much easier to generate negative values for the mouse pointer in VisPy by dragging the mouse below or to the left of the image (the coordinate origin is at the lower left corner in this program), and those negative values produce interesting effects.
 
 **IN PROGRESS...**

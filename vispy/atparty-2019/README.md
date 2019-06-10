@@ -109,3 +109,5 @@ Performance recording: https://scenesat.com/videoarchive/118 preparations starti
 ### Post-@party
 
 A colorized shader (all 3 modes at different color channels): https://www.shadertoy.com/view/WlS3RV
+
+One of the possible double warps here: https://www.shadertoy.com/view/3tSGzV

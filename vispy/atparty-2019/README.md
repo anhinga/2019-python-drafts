@@ -1,4 +1,4 @@
-# Materials related to my June 8, 2019 compo entry for @party, http://atparty-demoscene.net/. 
+### Materials related to my June 8, 2019 compo entry for @party, http://atparty-demoscene.net/. 
 
 The code traces its origins to the random number generator from Chapter 10 of "The Book of Shaders": https://thebookofshaders.com/10/
 
@@ -46,5 +46,30 @@ I have now made the Shadertoy version available on the Shadertoy site: https://w
 (The difference is, the `vec2(sin(4.*uv.x), sin(10.*uv.y))` is now the starting version on the Shadertoy site (this version is committed here as **demo.glsl**), and I added 1 pixel to the mouse position, `0.1*iMouse.xy+vec2(1.0,1.0)`, so that the initial state is not blank.)
 
 ***
+
+I took the https://github.com/vispy/vispy/blob/master/examples/demo/gloo/shadertoy.py example, and replaced the shader there with my shader (the resulting file is committed as **second-demo-shadertoy.py**).
+
+The following differences were necessary during this port: I had to replace `void mainImage( out vec4 fragColor, in vec2 fragCoord )` by `void main( void )`. I had to use `gl_FragCoord.xy` instead of `fragCoord`, and `gl_FragColor` instead of `fragColor`.
+
+I added the ability to switch between
+  * `uv.xy`
+  * `vec2(sin(4.*uv.x), sin(10.*uv.y))`
+  * `vec2(sin(4.*uv.x), uv.y)`
+  
+by pressing numeric keys `1`, `2`, `3`. To accomplish that I had to change the shader somewhat and to add following function to the OpenGL part:
+
+```python
+    def on_key_press(self, event):
+        if event.key == '1':
+            self.program['iControl'] = 0
+            self.program['iControl1'] = 0
+        if event.key == '2':
+            self.program['iControl'] = 0
+            self.program['iControl1'] = 1
+        if event.key == '3':
+            self.program['iControl'] = 1
+            self.program['iControl1'] = 1   
+```
+
 
 **IN PROGRESS...**

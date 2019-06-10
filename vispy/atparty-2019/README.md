@@ -75,7 +75,7 @@ I have also added some control by letters with a somewhat different logic, but t
 
 If one were to add keyboard control on the Shadertoy site, the code doing that would be quite different (they have a dedicated "texture keyboard" for this).
 
-Another difference is that mouse click event does not work in VisPy right now, one has to drag the mouse to communicate with the program:
+Another difference with the Shadertoy site is that mouse click event does not work in VisPy right now, **one has to drag the mouse to communicate with the program**:
 
 ```python
     def on_mouse_click(self, event):
@@ -85,6 +85,18 @@ Another difference is that mouse click event does not work in VisPy right now, o
 ```
 
 On the positive side, it is much easier to generate negative values for the mouse pointer in VisPy by dragging the mouse below or to the left of the image (the coordinate origin is at the lower left corner in this program), and those negative values produce interesting effects.
+
+I was advised to add mouse position logging to **second-demo-shadertoy.py** to file (or to console) to aid reproducibility of the observed patterns. Some simple-minded code which prints on console can be achieved by additing one more line to `on_mouse_move` function, for example:
+
+```python
+    def on_mouse_move(self, event):
+        if event.is_dragging:
+            x, y = event.pos
+            px, py = event.press_event.pos
+            imouse = (x, self.size[1] - y, px, self.size[1] - py)
+            self.program['iMouse'] = imouse
+            print("x,y: ", x, y, " px,py: ", px, py, " imouse: ", imouse)
+```
 
 ***
 

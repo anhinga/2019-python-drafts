@@ -88,6 +88,6 @@ On the positive side, it is much easier to generate negative values for the mous
 
 ***
 
-Performance recording: https://scenesat.com/videoarchive/118 preparations starting at 11:38:07 and the demo at 11:40:55  (11 hours 40 min 55 sec, in case the URL changes, that is "2019-06-09 @-party 2019 - Day 2 (12h55m4s hours)").
+Performance recording: https://scenesat.com/videoarchive/118 preparations starting at 11:38:07 and the demo at 11:40:55 time mark (11 hours 40 min 55 sec, in case the URL changes, that is "2019-06-09 @-party 2019 - Day 2 (12h55m4s hours)").
 
-(I did forget to bring the mouse which I had with me to the scene, so the control is somewhat less fluent than what I can achieve with a mouse. The compos started at 2:15am (rather than planned time of 10:30pm), and were running till about 4am.)
+(I did forget to bring the mouse which I had with me to the scene, so the interactive control was somewhat less fluent than what I can achieve with an external mouse. The compos started at 2:15am (rather than at planned time of 10:30pm), and were running till about 4am.)

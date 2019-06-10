@@ -49,7 +49,7 @@ I have now made the Shadertoy version available on the Shadertoy site: https://w
 
 I took the https://github.com/vispy/vispy/blob/master/examples/demo/gloo/shadertoy.py example, and replaced the shader there with my shader (the resulting file is committed as **second-demo-shadertoy.py**).
 
-The following differences were necessary during this port: I had to replace `void mainImage( out vec4 fragColor, in vec2 fragCoord )` by `void main( void )`. I had to use `gl_FragCoord.xy` instead of `fragCoord`, and `gl_FragColor` instead of `fragColor`.
+The following differences were necessary during this port: I had to replace `void mainImage( out vec4 fragColor, in vec2 fragCoord )` with `void main( void )`. I had to use `gl_FragCoord.xy` instead of `fragCoord`, and `gl_FragColor` instead of `fragColor`.
 
 I added the ability to switch between
   * `uv.xy`

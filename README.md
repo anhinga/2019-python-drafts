@@ -3,9 +3,10 @@
 ## subdirectories of this repository with examples
 
  * dash-cytoscape
+ * proto-dmms (for initial dmm-related sketches)
  * pyglet
  * trio-websocket
- * vispy
+ * vispy (including GLSL shaders)
  * with-javascript-clients (trying to work with mix of JavaScript clients, Python servers, and websockets)
 
 ## online books and manuals

@@ -3,7 +3,8 @@
 ## subdirectories of this repository with examples
 
  * dash-cytoscape
- * proto-dmms (for initial dmm-related sketches)
+ * node-editors (remarks only)
+ * proto-dmms (place for the coming initial dmm-related sketches)
  * pyglet
  * trio-websocket
  * vispy (including GLSL shaders and @party materials)

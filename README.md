@@ -4,7 +4,7 @@
 
  * dash-cytoscape
  * node-editors (remarks only)
- * proto-dmms (place for the coming initial dmm-related sketches)
+ * proto-dmms (place for the upcoming initial dmm-related sketches)
  * pyglet
  * trio-websocket
  * vispy (including GLSL shaders and @party materials)

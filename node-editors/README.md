@@ -12,3 +12,7 @@ For example, a Google search
  * `open source node editor python`
  
 produces a variety of interesting options.
+
+One of them is a rather compact and lightweight Python 2 editor [https://github.com/LeGoffLoic/Nodz](https://github.com/LeGoffLoic/Nodz)
+
+It was easy to make it work under Python 3 in this fork: [https://github.com/anhinga/Nodz](https://github.com/anhinga/Nodz)

@@ -30,3 +30,5 @@ Instead I am thinking about experiments with possible parts of this pipeline
     https://github.com/jsa-aerial/DMM/blob/master/design-notes/Early-2017/population-coordinate-descent.md
     (with index flattening used for visualization only, if at all)
     
+I am going to start with https://github.com/anhinga/population-of-directions
+    

@@ -15,6 +15,7 @@
  * "From Python to Numpy" by Nicolas Rougier ([book](https://www.labri.fr/perso/nrougier/from-python-to-numpy/), [code](https://github.com/rougier/from-python-to-numpy))
  * "Python & OpenGL for Scientific Visualization" by Nicolas Rougier ([book](http://www.labri.fr/perso/nrougier/python-opengl/), [code](https://github.com/rougier/python-opengl))
  * "IPython Cookbook, Second Edition (2018)" by Cyrille Rossant ([book](https://ipython-books.github.io/), [code](https://github.com/ipython-books/cookbook-2nd-code))
+ * "Elegant SciPy" by Juan Nunez-Iglesias, Stéfan van der Walt, and Harriet Dashnow ([github version](https://github.com/elegant-scipy/elegant-scipy), [Chapter 3](https://github.com/elegant-scipy/elegant-scipy/blob/master/markdown/ch3.markdown))
  ---
  * Dash by Plotly: [user guide](https://dash.plot.ly/), [code](https://github.com/plotly/dash)
  * Dash Cytoscape: [user guide](https://dash.plot.ly/cytoscape), [code](https://github.com/plotly/dash-cytoscape/)

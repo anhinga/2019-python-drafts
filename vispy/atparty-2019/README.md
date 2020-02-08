@@ -45,6 +45,8 @@ I have now made the Shadertoy version available on the Shadertoy site: https://w
 
 (The difference is, the `vec2(sin(4.*uv.x), sin(10.*uv.y))` is now the starting version on the Shadertoy site (this version is committed here as **demo.glsl**), and I added 1 pixel to the mouse position, `0.1*iMouse.xy+vec2(1.0,1.0)`, so that the initial state is not blank.)
 
+![Image](https://www.shadertoy.com/media/shaders/WlSGzK.jpg "a shader")
+
 ***
 
 I took the https://github.com/vispy/vispy/blob/master/examples/demo/gloo/shadertoy.py example, and replaced the shader there with my shader (the resulting file is committed as **second-demo-shadertoy.py**).
@@ -110,4 +112,8 @@ Performance recording: https://scenesat.com/videoarchive/118 preparations starti
 
 A colorized shader (all 3 modes at different color channels): https://www.shadertoy.com/view/WlS3RV
 
+![Image](https://www.shadertoy.com/media/shaders/WlS3RV.jpg "a shader")
+
 One of the possible double warps here: https://www.shadertoy.com/view/3tSGzV
+
+![Image](https://www.shadertoy.com/media/shaders/3tSGzV.jpg "a shader")
